@@ -126,13 +126,13 @@ export const projects: Project[] = [
         description:
             "A real-time internal communication platform supporting secure authentication, group messaging, and push notifications with cloud-based backend services.",
         period: "2026",
-        location: "Remote",
+        location: "Remote, Saudi Arabia",
         highlights: [
             "Architected and developed a real-time internal communication platform",
             "Integrated cloud-based backend services for real-time data synchronization",
             "Designed scalable architecture supporting multi-environment configuration",
         ],
-        tags: ["Flutter", "Dart", "SignalR", "Firebase", "Clean Architecture"],
+        tags: ["Firebase", "Riverpod", "Notifications", "Cloud Functions", "Clean Architecture", "Flavors", "Real-Time chat", "Functional Programming"],
         icon: "/chat_app.jpeg",
     },
     {
@@ -151,7 +151,7 @@ export const projects: Project[] = [
             "https://play.google.com/store/apps/details?id=com.yaschools",
         appStoreUrl:
             "https://apps.apple.com/eg/app/yaschools-parents/id1642532633",
-        tags: ["Flutter", "Dart", "CI/CD", "Firebase", "Bloc"],
+        tags: ["Bloc & Cubit", "Booking", "E-commerce", "Filters", "Rating & Reviews", "Different payment gateways", "Flavors", "Azure pipelines", "Over-the-Air Patching", "Clean Architecture"],
         icon: "/yaschools.jpeg",
     },
     {
@@ -170,7 +170,7 @@ export const projects: Project[] = [
             "https://play.google.com/store/apps/details?id=com.amasi.vult",
         appStoreUrl:
             "https://apps.apple.com/eg/app/vult-%DA%A4%D9%88%D9%84%D8%AA/id6747215629",
-        tags: ["Flutter", "Dart", "WebSockets", "Clean Architecture"],
+        tags: ["Flutter", "QR Attendance", "Real-Time Chat", "Onboarding", "Custom Splash"],
         icon: "/vult.jpeg",
     },
     {
@@ -188,7 +188,7 @@ export const projects: Project[] = [
             "https://play.google.com/store/apps/details?id=com.auctions.capital&hl=en",
         appStoreUrl:
             "https://apps.apple.com/us/app/capital-auctions/id6504776169",
-        tags: ["Flutter", "Dart", "Real-Time", "Payment Integration"],
+        tags: ["Flutter", "Live Bidding", "Stripe Payment", "Real-time updates"],
         icon: "/capital_auctions.jpeg",
     },
 
