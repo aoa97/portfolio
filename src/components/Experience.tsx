@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
+import Image from "next/image";
 import { useRef } from "react";
 import { experiences, education } from "@/lib/data";
 import SectionReveal from "./SectionReveal";
@@ -115,9 +116,19 @@ function TimelineCard({ exp }: { exp: (typeof experiences)[0] }) {
             <div className="flex items-start gap-3 mb-3">
                 <div
                     className="w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0
-                      group-hover:bg-accent/20 transition-colors"
+                      group-hover:bg-accent/20 transition-colors overflow-hidden"
                 >
-                    <HiOutlineBriefcase className="w-5 h-5 text-accent" />
+                    {exp.logo ? (
+                        <Image
+                            src={exp.logo}
+                            alt={`${exp.company} logo`}
+                            width={40}
+                            height={40}
+                            className="object-cover"
+                        />
+                    ) : (
+                        <HiOutlineBriefcase className="w-5 h-5 text-accent" />
+                    )}
                 </div>
                 <div>
                     <h3 className="text-base font-bold group-hover:text-accent transition-colors">

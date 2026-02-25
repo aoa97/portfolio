@@ -56,8 +56,9 @@ export const skillCategories: SkillCategory[] = [
             "Bloc / Cubit",
             "Riverpod",
             "Provider",
-            "Animations",
+            "GoRouter",
             "Deep Linking",
+            "Animations",
             "Localization",
             "Push Notifications",
             "Google Maps",
@@ -202,23 +203,25 @@ export interface Experience {
     location: string;
     type: string;
     bullets: string[];
+    logo?: string;
 }
 
 export const experiences: Experience[] = [
     {
         company: "YaSchools Innovative Solution",
         role: "Flutter Developer",
-        period: "07/2022 – Present",
-        location: "Remote, Egypt",
+        period: "12/2023 – Present",
+        location: "Remote, Riyadh, Saudi Arabia",
         type: "Full-time",
         bullets: [
             "Leading cross-platform mobile development with scalable architecture and reusable component design",
-            "Applying SOLID principles and clean architecture practices to ensure maintainability and extensibility",
+            "Applying design principles and clean architecture practices to ensure maintainability and extensibility",
             "Owning the full application lifecycle from planning to production deployment",
             "Designing and managing CI/CD pipelines to automate build, testing, and release workflows",
             "Implementing over-the-air patching and optimizing release processes for reliable production rollouts",
             "Collaborating cross-functionally with backend, design, QA, and product teams",
         ],
+        logo: "/yaschools_co_.jpeg",
     },
     {
         company: "Freelance",
@@ -233,6 +236,20 @@ export const experiences: Experience[] = [
             "Applied clean architecture principles and structured release management",
         ],
     },
+
+    {
+        company: "Algoriza",
+        role: "Junior Flutter Developer",
+        period: "07/2022 – 12/2023",
+        location: "Remote, Egypt",
+        type: "Full-time",
+        bullets: [
+            "Transitioned from frontend internship to Flutter development, contributing to real-world production applications under senior mentorship",
+            "Contributed to production-grade Flutter applications integrating APIs and third-party services",
+            "Collaborated with senior engineers on architectural decisions and code quality standards",
+        ],
+        logo: "/algoriza.jpeg",
+    },
     {
         company: "Algoriza",
         role: "Front-End Developer Intern",
@@ -241,9 +258,10 @@ export const experiences: Experience[] = [
         type: "Internship",
         bullets: [
             "Developed frontend projects using HTML, CSS, JavaScript, React, and Vue",
-            "Participated in structured code reviews led by senior engineers",
-            "Applied expert feedback to improve code quality, performance, and maintainability",
+            "Received detailed code reviews from senior engineers and applied feedback to improve code quality, performance, and maintainability",
+            "Participated in technical sessions covering industry best practices and real-world project applications"
         ],
+        logo: "/algoriza.jpeg",
     },
     {
         company: "Devs on Duty",
@@ -256,6 +274,7 @@ export const experiences: Experience[] = [
             "Created wireframes and visual designs using Adobe XD",
             "Converted design prototypes into responsive web interfaces using HTML and CSS",
         ],
+        logo: "/devs_on_duty.jpeg",
     },
 ];
 
