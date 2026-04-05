@@ -63,6 +63,7 @@ export const skillCategories: SkillCategory[] = [
             "Push Notifications",
             "Google Maps",
             "Flavors",
+            "Unit, Widget & Integration Testing",
         ],
     },
     {
@@ -70,10 +71,12 @@ export const skillCategories: SkillCategory[] = [
         icon: HiOutlineCog6Tooth,
         skills: [
             "CI/CD Pipelines",
+            "Azure Pipelines",
             "Android & iOS Distribution",
-            "Over-the-Air Patching",
+            "Over-the-Air Patching (Shorebird)",
             "Release Management",
             "Multi-Environment Config",
+            "Git & Version Control",
         ],
     },
     {
@@ -83,7 +86,8 @@ export const skillCategories: SkillCategory[] = [
             "OOP & SOLID Principles",
             "Design Patterns",
             "Clean Architecture",
-            "Scalable Component Design",
+            "MVVM, MVC",
+            "Scalable & Reusable Component Design",
             "Code Review & Quality",
         ],
     },
@@ -125,74 +129,71 @@ export const projects: Project[] = [
     {
         name: "Internal Real-Time Chat System",
         description:
-            "A real-time internal communication platform supporting secure authentication, group messaging, and push notifications with cloud-based backend services.",
-        period: "2026",
+            "A real-time internal communication platform built for YaSchools team members, supporting secure authentication, group messaging, and push notifications.",
+        period: "02/2026 – Present",
         location: "Remote, Saudi Arabia",
         highlights: [
-            "Architected and developed a real-time internal communication platform",
-            "Integrated cloud-based backend services for real-time data synchronization",
-            "Designed scalable architecture supporting multi-environment configuration",
+            "Architected and developed a real-time internal communication platform supporting secure authentication, group messaging, and push notifications",
+            "Built with Flutter, WebSockets, and Firebase for real-time messaging, data synchronization, and push delivery",
+            "Designed scalable Clean Architecture to support multi-environment configuration and production-ready releases",
         ],
-        tags: ["Firebase", "Riverpod", "Notifications", "Cloud Functions", "Clean Architecture", "Flavors", "Real-Time chat", "Functional Programming"],
+        tags: ["Flutter", "Firebase", "WebSockets", "Riverpod", "Clean Architecture", "Flavors", "Push Notifications", "Real-Time Chat"],
         icon: "/chat_app.jpeg",
     },
     {
         name: "YaSchools App",
         description:
-            "A production-grade educational platform serving thousands of users with authentication, payments, booking systems, and interactive UI components.",
+            "A production-grade educational platform serving thousands of active users across Saudi Arabia with authentication, payments, booking systems, and interactive UI components.",
         period: "09/2022 – Present",
         location: "Remote, Saudi Arabia",
         highlights: [
-            "Led mobile development for a production-grade application serving thousands of users",
-            "Implemented scalable feature modules including authentication, payments, and booking systems",
-            "Managed CI/CD automation and release workflows for reliable Android and iOS deployments",
-            "Optimized performance and ensured stability across multiple environments",
+            "Published on Google Play and App Store, serving thousands of active users across Saudi Arabia",
+            "Led full app UI/UX redesign and rebranding, independently translating new Figma specs into pixel-perfect Flutter components across the entire application",
+            "Delivered authentication, payments, and booking systems as independently deployable feature modules",
         ],
         playStoreUrl:
             "https://play.google.com/store/apps/details?id=com.yaschools",
         appStoreUrl:
             "https://apps.apple.com/eg/app/yaschools-parents/id1642532633",
-        tags: ["Bloc & Cubit", "Booking", "E-commerce", "Filters", "Rating & Reviews", "Different payment gateways", "Flavors", "Azure pipelines", "Over-the-Air Patching", "Clean Architecture"],
+        tags: ["Bloc & Cubit", "Booking", "E-commerce", "Filters", "Rating & Reviews", "Payment Gateways", "Flavors", "Azure Pipelines", "Shorebird", "Clean Architecture"],
         icon: "/yaschools.jpeg",
     },
     {
         name: "Vult App",
         description:
-            "A cross-platform mobile application featuring QR-based attendance tracking, real-time chat functionality, and onboarding workflows.",
+            "A Flutter sports academy management app featuring QR attendance, player performance tracking, parent portal, and real-time chat — with full UI/UX designed from scratch.",
         period: "12/2024 – 04/2025",
         location: "Remote, Saudi Arabia",
         highlights: [
-            "Independently designed and developed from concept to store release",
-            "Implemented QR-based attendance tracking and real-time chat functionality",
-            "Applied clean architecture principles and structured release management",
-            "Delivered production-ready builds for both Android and iOS platforms",
+            "Built a Flutter sports academy management app featuring QR attendance, player performance tracking, parent portal, and real-time chat",
+            "Designed and implemented the entire UI/UX from scratch with no design handoff — including per-academy theme switching and multi-academy navigation",
+            "Delivered push notification workflows (e.g. parent trip confirmation alerts) and production-ready builds for Android and iOS",
         ],
         playStoreUrl:
             "https://play.google.com/store/apps/details?id=com.amasi.vult",
         appStoreUrl:
             "https://apps.apple.com/eg/app/vult-%DA%A4%D9%88%D9%84%D8%AA/id6747215629",
-        tags: ["Flutter", "QR Attendance", "Real-Time Chat", "Onboarding", "Custom Splash"],
+        tags: ["Flutter", "QR Attendance", "Player Performance", "Parent Portal", "Real-Time Chat", "Theme Switching", "Push Notifications", "Clean Architecture"],
         icon: "/vult.jpeg",
     },
     {
         name: "Capital Auctions App",
         description:
-            "A real-time auction platform with live bidding, secure payment integration, and scalable UI architecture optimized for real-time updates.",
+            "A real-time auction platform with live bidding on auction lots, PayPal payment integration, full e-commerce flow, and instant updates powered by SignalR.",
         period: "01/2024 – 01/2025",
         location: "Remote, UAE",
         highlights: [
-            "Developed a real-time auction platform with live bidding and secure payment integration",
-            "Implemented scalable UI architecture optimized for real-time updates",
-            "Ensured stable store releases and production reliability",
+            "Built a Flutter real-time auction platform with live bidding on auction lots and instant updates powered by SignalR",
+            "Integrated PayPal payment gateway with full e-commerce flow including shop, cart, and checkout",
+            "Implemented push notifications for auction alerts and delivered production-ready builds for Android and iOS",
         ],
         playStoreUrl:
             "https://play.google.com/store/apps/details?id=com.auctions.capital&hl=en",
         appStoreUrl:
             "https://apps.apple.com/us/app/capital-auctions/id6504776169",
-        tags: ["Flutter", "Live Bidding", "Stripe Payment", "Real-time updates"],
+        tags: ["Flutter", "Live Bidding", "SignalR", "PayPal", "E-commerce", "Push Notifications", "Clean Architecture"],
         icon: "/capital_auctions.jpeg",
     },
-
 ];
 
 // ── Experience ──
@@ -214,29 +215,18 @@ export const experiences: Experience[] = [
         location: "Remote, Riyadh, Saudi Arabia",
         type: "Full-time",
         bullets: [
-            "Leading cross-platform mobile development with scalable architecture and reusable component design",
-            "Applying design principles and clean architecture practices to ensure maintainability and extensibility",
-            "Owning the full application lifecycle from planning to production deployment",
-            "Designing and managing CI/CD pipelines to automate build, testing, and release workflows",
-            "Implementing over-the-air patching and optimizing release processes for reliable production rollouts",
-            "Collaborating cross-functionally with backend, design, QA, and product teams",
+            "Built and maintained a production Flutter app serving thousands of users across Android and iOS",
+            "Refactored legacy codebase from tightly coupled, unstructured code to decoupled feature modules using Clean Architecture, SOLID principles, and design patterns — significantly improving maintainability, testability, and scalability",
+            "Migrated routing system from legacy Navigator to GoRouter, enabling deep linking, declarative route management, and improved navigation scalability",
+            "Configured Android & iOS Flavors to support multi-environment builds (dev, production), eliminating manual config switching",
+            "Designed and managed CI/CD pipelines using Azure Pipelines to automate build, testing, and release workflows for Android and iOS",
+            "Implemented over-the-air patching using Shorebird to enable code push updates, ensuring reliable production rollouts with minimal downtime",
+            "Integrated multiple payment gateways applying design patterns and DRY principles to build a reusable, extensible payment abstraction layer",
+            "Led full app UI/UX redesign and rebranding, independently translating new Figma specs into pixel-perfect Flutter components across the entire application",
+            "Collaborated cross-functionally with backend, design, QA, and product teams — managing delivery tracking via Azure Boards to ensure on-time, high-quality releases",
         ],
         logo: "/yaschools_co_.jpeg",
     },
-    {
-        company: "Freelance",
-        role: "Flutter Developer",
-        period: "2023 – 2025",
-        location: "Remote",
-        type: "Freelance",
-        bullets: [
-            "Delivered production-ready mobile applications published on Google Play and the App Store",
-            "Managed full development lifecycle from architecture design to deployment",
-            "Implemented scalable features including real-time systems, payment integration, and QR-based workflows",
-            "Applied clean architecture principles and structured release management",
-        ],
-    },
-
     {
         company: "Algoriza",
         role: "Junior Flutter Developer",
@@ -244,9 +234,8 @@ export const experiences: Experience[] = [
         location: "Remote, Egypt",
         type: "Full-time",
         bullets: [
-            "Transitioned from frontend internship to Flutter development, contributing to real-world production applications under senior mentorship",
-            "Contributed to production-grade Flutter applications integrating APIs and third-party services",
-            "Collaborated with senior engineers on architectural decisions and code quality standards",
+            "Transitioned from frontend to Flutter development, contributing to production-grade applications integrating APIs and third-party services",
+            "Collaborated with senior engineers on architectural decisions, code reviews, and quality standards",
         ],
         logo: "/algoriza.jpeg",
     },
@@ -257,9 +246,8 @@ export const experiences: Experience[] = [
         location: "Remote, Egypt",
         type: "Internship",
         bullets: [
-            "Developed frontend projects using HTML, CSS, JavaScript, React, and Vue",
-            "Received detailed code reviews from senior engineers and applied feedback to improve code quality, performance, and maintainability",
-            "Participated in technical sessions covering industry best practices and real-world project applications"
+            "Developed frontend projects using HTML, CSS, JavaScript, React, and Vue — receiving detailed code reviews and applying senior engineer feedback to improve quality and performance",
+            "Attended technical sessions on industry best practices and real-world project applications",
         ],
         logo: "/algoriza.jpeg",
     },
@@ -270,9 +258,8 @@ export const experiences: Experience[] = [
         location: "Remote, Egypt",
         type: "Internship",
         bullets: [
-            "Applied UX processes including user research, sitemap creation, and user flow design",
-            "Created wireframes and visual designs using Adobe XD",
-            "Converted design prototypes into responsive web interfaces using HTML and CSS",
+            "Conducted user research, sitemaps, and user flow design using UX processes",
+            "Designed wireframes using Adobe XD and converted them into responsive web interfaces with HTML and CSS",
         ],
         logo: "/devs_on_duty.jpeg",
     },
