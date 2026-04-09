@@ -18,7 +18,7 @@ import type { IconType } from "react-icons";
 // ── Personal Info ──
 export const personalInfo = {
     name: "Ahmed Usama",
-    title: "Flutter Developer",
+    title: "Software Engineer | Flutter Developer",
     tagline:
         "Flutter Developer with 4+ years of experience building scalable, production-ready cross-platform mobile applications.",
     bio: `Flutter Developer with 4+ years of experience in software engineering and 3+ years specializing in cross-platform mobile development. Experienced in building scalable, production-ready applications with clean architecture, SOLID principles, and modern design patterns. Proven track record of managing full mobile application lifecycles, implementing CI/CD pipelines, optimizing performance, and delivering apps published on Google Play and the App Store. Leverages AI-assisted development tools to accelerate implementation, enhance productivity, and maintain high engineering standards.`,
