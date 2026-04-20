@@ -28,7 +28,7 @@ export const personalInfo = {
     linkedin: "https://www.linkedin.com/in/aoa97",
     whatsapp: "https://api.whatsapp.com/send?phone=00201119784561",
     location: "Egypt",
-    profilePic: "/profile_2.jpeg",
+    profilePic: "/profile_2.png",
     resumeUrl:
         "https://drive.google.com/uc?export=download&id=1ML5LSfxpGDS_Vex9QhnV5qzuxrMm_DBk",
 };
