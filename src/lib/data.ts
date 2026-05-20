@@ -130,7 +130,7 @@ export const projects: Project[] = [
         name: "Internal Real-Time Chat System",
         description:
             "A real-time internal communication platform built for YaSchools team members, supporting secure authentication, group messaging, and push notifications.",
-        period: "02/2026 – Present",
+        period: "02/2026 – 05/2026",
         location: "Remote, Saudi Arabia",
         highlights: [
             "Architected and developed a real-time internal communication platform supporting secure authentication, group messaging, and push notifications",
@@ -144,7 +144,7 @@ export const projects: Project[] = [
         name: "YaSchools App",
         description:
             "A production-grade educational platform serving thousands of active users across Saudi Arabia with authentication, payments, booking systems, and interactive UI components.",
-        period: "09/2022 – Present",
+        period: "09/2022 – 05/2026",
         location: "Remote, Saudi Arabia",
         highlights: [
             "Published on Google Play and App Store, serving thousands of active users across Saudi Arabia",
@@ -209,9 +209,25 @@ export interface Experience {
 
 export const experiences: Experience[] = [
     {
+        company: "Azm Squad",
+        role: "Senior Flutter Developer",
+        period: "05/2026 – Present",
+        location: "Cairo, Egypt",
+        type: "Full-time",
+        bullets: [
+            "Contributing to the development of a production Flutter application targeting Android and iOS platforms",
+            "Applying Clean Architecture principles and reusable design patterns to improve code maintainability",
+            "Developing application features using Flutter, Dart, and BLoC/Cubit state management.",
+            "Integrating APIs, payment services, and third-party packages.",
+            "Supporting CI/CD and release workflows through Azure DevOps",
+            "Collaborating within Agile teams to deliver stable and scalable mobile solutions",
+        ],
+        logo: "/azmsquad_logo.jpeg",
+    },
+    {
         company: "YaSchools Innovative Solution",
-        role: "Flutter Developer",
-        period: "12/2023 – Present",
+        role: "Senior Flutter Developer",
+        period: "12/2023 – 05/2026",
         location: "Remote, Riyadh, Saudi Arabia",
         type: "Full-time",
         bullets: [
