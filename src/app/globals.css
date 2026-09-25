@@ -1,28 +1,30 @@
 @import "tailwindcss";
 
-/* ── Theme Variables ── */
+/* ── Executive Palette (Tailored for Corporate Leadership, Operations & Analytics) ── */
 :root {
   --background: #ffffff;
   --foreground: #0f172a;
   --card: #f8fafc;
   --card-border: #e2e8f0;
   --muted: #64748b;
-  --accent: #0175C2;
-  --accent-light: #4fc3f7;
-  --accent-dark: #01579b;
-  --section-alt: #f1f5f9;
+  --accent: #1e40af;       /* Authoritative Royal Navy (Executive, Corporate, Trusted) */
+  --accent-light: #3b82f6; /* Polished Sapphire */
+  --accent-dark: #172554;  /* Deep Midnight Navy */
+  --accent-gold: #d97706;  /* Warm Champagne Gold for prestige/achievements */
+  --section-alt: #f8fafc;
 }
 
 .dark {
-  --background: #0a0f1c;
-  --foreground: #e2e8f0;
-  --card: #111827;
-  --card-border: #1e293b;
+  --background: #0b1120;   /* Executive Midnight Slate (Sophisticated, non-cyberpunk) */
+  --foreground: #f1f5f9;
+  --card: #131d33;         /* Deep Corporate Slate */
+  --card-border: #1e2c4a;   /* Subtle Deep Navy Border */
   --muted: #94a3b8;
-  --accent: #4fc3f7;
-  --accent-light: #81d4fa;
-  --accent-dark: #0175C2;
-  --section-alt: #0f172a;
+  --accent: #3b82f6;       /* Clean Executive Sapphire Blue */
+  --accent-light: #60a5fa; /* Soft Refined Blue */
+  --accent-dark: #1d4ed8;  /* Deep Cobalt */
+  --accent-gold: #f59e0b;  /* Warm Gold */
+  --section-alt: #0e1526;
 }
 
 @theme inline {
@@ -34,6 +36,7 @@
   --color-accent: var(--accent);
   --color-accent-light: var(--accent-light);
   --color-accent-dark: var(--accent-dark);
+  --color-accent-gold: var(--accent-gold);
   --color-section-alt: var(--section-alt);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -75,14 +78,14 @@ body {
 /* ── Custom Keyframes ── */
 @keyframes blob {
   0%, 100% { transform: translate(0, 0) scale(1); }
-  25% { transform: translate(30px, -50px) scale(1.1); }
-  50% { transform: translate(-20px, 20px) scale(0.9); }
-  75% { transform: translate(20px, 40px) scale(1.05); }
+  25% { transform: translate(25px, -35px) scale(1.06); }
+  50% { transform: translate(-15px, 15px) scale(0.95); }
+  75% { transform: translate(15px, 25px) scale(1.03); }
 }
 
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-12px); }
+  50% { transform: translateY(-8px); }
 }
 
 @keyframes spin-slow {
@@ -96,8 +99,8 @@ body {
 }
 
 @keyframes pulse-ring {
-  0% { transform: scale(1); opacity: 1; }
-  100% { transform: scale(1.5); opacity: 0; }
+  0% { transform: scale(1); opacity: 0.8; }
+  100% { transform: scale(1.35); opacity: 0; }
 }
 
 @keyframes gradient-shift {
@@ -107,23 +110,23 @@ body {
 
 /* ── Animation Utilities ── */
 .animate-blob {
-  animation: blob 7s infinite ease-in-out;
+  animation: blob 9s infinite ease-in-out;
 }
 
 .animate-blob-delay-2 {
-  animation: blob 7s infinite ease-in-out 2s;
+  animation: blob 9s infinite ease-in-out 3s;
 }
 
 .animate-blob-delay-4 {
-  animation: blob 7s infinite ease-in-out 4s;
+  animation: blob 9s infinite ease-in-out 6s;
 }
 
 .animate-float {
-  animation: float 6s ease-in-out infinite;
+  animation: float 5s ease-in-out infinite;
 }
 
 .animate-spin-slow {
-  animation: spin-slow 8s linear infinite;
+  animation: spin-slow 12s linear infinite;
 }
 
 .animate-shine {
@@ -131,12 +134,12 @@ body {
 }
 
 .animate-pulse-ring {
-  animation: pulse-ring 1.5s ease-out infinite;
+  animation: pulse-ring 2s ease-out infinite;
 }
 
 .animate-gradient {
   background-size: 200% 200%;
-  animation: gradient-shift 3s ease infinite;
+  animation: gradient-shift 4s ease infinite;
 }
 
 /* ── Shine Button Effect ── */
@@ -155,7 +158,7 @@ body {
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.25),
     transparent
   );
   transform: skewX(-15deg);
@@ -166,20 +169,22 @@ body {
   animation: shine 0.75s ease-in-out;
 }
 
-/* ── Glass Morphism ── */
+/* ── Refined Glass Morphism ── */
 .glass {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(226, 232, 240, 0.8);
 }
 
 .dark .glass {
-  background: rgba(17, 24, 39, 0.7);
+  background: rgba(19, 29, 51, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* ── Gradient Text ── */
+/* ── Dignified Executive Gradient Text ── */
 .gradient-text {
   background: linear-gradient(135deg, var(--accent), var(--accent-light));
   -webkit-background-clip: text;
@@ -187,17 +192,17 @@ body {
   background-clip: text;
 }
 
-/* ── Glow Ring for Profile Picture ── */
+/* ── Halo Ring for Profile Picture ── */
 .glow-ring {
   background: conic-gradient(
     from 0deg,
     var(--accent),
     var(--accent-light),
-    var(--accent),
+    rgba(59, 130, 246, 0.3),
     var(--accent-dark),
     var(--accent)
   );
-  animation: spin-slow 8s linear infinite;
+  animation: spin-slow 12s linear infinite;
 }
 
 /* ── Timeline Line ── */

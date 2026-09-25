@@ -14,38 +14,47 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ahmed Usama | Flutter Developer",
+  metadataBase: new URL("https://mohamed-magdy.vercel.app"),
+  title: "Mohamed Magdy | Real-Time Performance Analyst & Operations Leader",
   description:
-    "Flutter Developer with 4+ years of experience building scalable, production-ready cross-platform mobile applications. Specialized in clean architecture, SOLID principles, and modern design patterns.",
+    "Results-driven professional with 14+ years of experience (12 years in Dubai, UAE) in real-time performance analytics, workforce scheduling, SLA optimization, asset management, and customer service leadership.",
   keywords: [
-    "Flutter Developer",
-    "Dart",
-    "Mobile Developer",
-    "Cross-Platform",
-    "Ahmed Usama",
-    "Software Engineer",
+    "Mohamed Magdy",
+    "Real-Time Analyst",
+    "Performance Analyst",
+    "Workforce Management",
+    "Customer Service Leader",
+    "Team Leader Dubai",
+    "Teleperformance Dubai",
+    "Operations Manager",
+    "Asset Management",
+    "SLA Optimization",
+    "Six Sigma Yellow Belt",
+    "PMP",
+    "Dubai UAE",
   ],
-  authors: [{ name: "Ahmed Usama" }],
+  authors: [{ name: "Mohamed Magdy" }],
   openGraph: {
-    title: "Ahmed Usama | Flutter Developer",
+    title: "Mohamed Magdy | Real-Time Performance Analyst & Operations Leader",
     description:
-      "Flutter Developer with 4+ years building scalable production apps",
+      "14+ years of professional leadership in UAE contact centers, real-time analytics, and operational management.",
     type: "website",
     locale: "en_US",
     images: [
       {
-        url: "https://i.ibb.co/C56SsLKw/8f7aa33a-34a4-4637-baf3-fba58ed88d6c.jpg",
+        url: "/mohamed_magdy.jpeg",
         width: 400,
         height: 400,
-        alt: "Ahmed Usama",
+        alt: "Mohamed Magdy",
       },
     ],
   },
   twitter: {
     card: "summary",
-    title: "Ahmed Usama | Flutter Developer",
+    title: "Mohamed Magdy | Real-Time Performance Analyst & Operations Leader",
     description:
-      "Flutter Developer with 4+ years building scalable production apps",
+      "14+ years of professional leadership in UAE contact centers, real-time analytics, and operational management.",
+    images: ["/mohamed_magdy.jpeg"],
   },
 };
 
@@ -61,8 +70,8 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
-          enableSystem
+          defaultTheme="light"
+          enableSystem={false}
           disableTransitionOnChange={false}
         >
           {children}

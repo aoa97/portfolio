@@ -1,45 +1,55 @@
 import {
-    SiFlutter,
-    SiDart,
-    SiFirebase,
-    SiGithub,
-    SiLinkedin,
-    SiGoogleplay,
-    SiAppstore,
-} from "react-icons/si";
-import {
-    HiOutlineDevicePhoneMobile,
-    HiOutlineCog6Tooth,
-    HiOutlineCubeTransparent,
-    HiOutlineServerStack,
+    HiOutlineUsers,
+    HiOutlineChartBar,
+    HiOutlineBuildingOffice2,
+    HiOutlineChatBubbleLeftRight,
+    HiOutlineShieldCheck,
+    HiOutlineClock,
+    HiOutlineDocumentText,
+    HiOutlineCheckBadge,
+    HiOutlinePhone,
+    HiOutlineEnvelope,
+    HiOutlineMapPin,
+    HiOutlineBriefcase,
+    HiOutlineAcademicCap,
 } from "react-icons/hi2";
+import { SiLinkedin } from "react-icons/si";
+import { FaWhatsapp } from "react-icons/fa";
 import type { IconType } from "react-icons";
 
 // ── Personal Info ──
 export const personalInfo = {
-    name: "Ahmed Usama",
-    title: "Software Engineer | Flutter Developer",
+    name: "Mohamed Magdy",
+    fullName: "Mohamed Magdy Ahmed Fouad",
+    title: "Real-Time & Performance Analyst | Customer Service Leader",
+    titles: [
+        "Real-Time & Performance Analyst",
+        "Customer Service Team Leader",
+        "Workforce Management & SLA Specialist",
+        "Asset & Client Portfolio Manager",
+    ],
     tagline:
-        "Flutter Developer with 4+ years of experience building scalable, production-ready cross-platform mobile applications.",
-    bio: `Flutter Developer with 4+ years of experience in software engineering and 3+ years specializing in cross-platform mobile development. Experienced in building scalable, production-ready applications with clean architecture, SOLID principles, and modern design patterns. Proven track record of managing full mobile application lifecycles, implementing CI/CD pipelines, optimizing performance, and delivering apps published on Google Play and the App Store. Leverages AI-assisted development tools to accelerate implementation, enhance productivity, and maintain high engineering standards.`,
-    phone: "+201119784561",
-    email: "eng.ahmedusama@yahoo.com",
-    github: "https://github.com/aoa97",
-    linkedin: "https://www.linkedin.com/in/aoa97",
-    whatsapp: "https://api.whatsapp.com/send?phone=00201119784561",
-    location: "Egypt",
-    profilePic: "/profile_3.png",
-    resumeUrl:
-        "https://drive.google.com/uc?export=download&id=1ML5LSfxpGDS_Vex9QhnV5qzuxrMm_DBk",
+        "Results-oriented professional with 14+ years of experience—including 12 years across high-volume UAE contact centers—specializing in real-time performance analytics, workforce scheduling, SLA optimization, asset management, and customer experience excellence.",
+    bio: `With over 14 years of diverse professional experience across leading multinational organizations—including 12 years in Dubai, UAE—I specialize in real-time performance analytics, contact center shift planning, operational SLA optimization, and asset management. Promoted to Team Leader through consistent delivery of exceptional service quality, disciplined conflict mediation, and operational rigor. Adept at coordinating with cross-functional leadership, optimizing workforce productivity, and elevating brand reputation through customer satisfaction and data-driven insights.`,
+    phone: "+971 56 121 2139",
+    phoneRaw: "+971561212139",
+    email: "Mouhamed_magdy@yahoo.com",
+    linkedin: "https://www.linkedin.com/in/mouhamed-magdy-08222566?fromQR=1",
+    whatsapp: "https://wa.me/971561212139",
+    location: "Dubai, United Arab Emirates",
+    profilePic: "/mohamed_magdy.jpeg",
+    resumeUrl: "/Mohamed_Magdy_CV.docx",
 };
 
-// ── Stats ──
+// ── Key Stats ──
 export const stats = [
-    { label: "Years Experience", value: 4, suffix: "+" },
-    { label: "Published Apps", value: 3, suffix: "+" },
+    { label: "Years Total Experience", value: 14, suffix: "+" },
+    { label: "Years UAE Experience", value: 12, suffix: "+" },
+    { label: "Agents Coached & Led", value: 20, suffix: "+" },
+    { label: "SLA Target Achievement", value: 98, suffix: "%" },
 ];
 
-// ── Skills ──
+// ── Skills & Competencies ──
 export interface SkillCategory {
     title: string;
     icon: IconType;
@@ -48,155 +58,140 @@ export interface SkillCategory {
 
 export const skillCategories: SkillCategory[] = [
     {
-        title: "Mobile Development",
-        icon: HiOutlineDevicePhoneMobile,
+        title: "Workforce Management & Analytics",
+        icon: HiOutlineChartBar,
         skills: [
-            "Flutter",
-            "Dart",
-            "Bloc / Cubit",
-            "Riverpod",
-            "Provider",
-            "GoRouter",
-            "Deep Linking",
-            "Animations",
-            "Localization",
-            "Push Notifications",
-            "Google Maps",
-            "Flavors",
-            "Unit, Widget & Integration Testing",
+            "Real-Time Queue Monitoring",
+            "Shift Planning & Scheduling",
+            "SLA & Service Level Optimization",
+            "Workforce Capacity Management",
+            "Daily & Weekly Performance Scorecards",
+            "Agent Productivity & Variance Analysis",
+            "Data Analytics & Trend Forecasting",
         ],
     },
     {
-        title: "DevOps & Distribution",
-        icon: HiOutlineCog6Tooth,
+        title: "Customer Service & Contact Center",
+        icon: HiOutlineChatBubbleLeftRight,
         skills: [
-            "CI/CD Pipelines",
-            "Azure Pipelines",
-            "Android & iOS Distribution",
-            "Over-the-Air Patching (Shorebird)",
-            "Release Management",
-            "Multi-Environment Config",
-            "Git & Version Control",
+            "Customer Service Leadership",
+            "Inbound & Outbound Call Operations",
+            "Escalation & Dispute Mediation",
+            "Customer Satisfaction (CSAT & NPS)",
+            "First Contact Resolution (FCR)",
+            "Quality Assurance (QA) & Coaching",
+            "Product & System Education",
+            "Multi-Channel Support (Voice, Chat, Email)",
         ],
     },
     {
-        title: "Architecture & Principles",
-        icon: HiOutlineCubeTransparent,
+        title: "Operations & Asset Management",
+        icon: HiOutlineBuildingOffice2,
         skills: [
-            "OOP & SOLID Principles",
-            "Design Patterns",
-            "Clean Architecture",
-            "MVVM, MVC",
-            "Scalable & Reusable Component Design",
-            "Code Review & Quality",
+            "Company Asset Lifecycle Management",
+            "Client Portfolio Development",
+            "Supply Options Evaluation",
+            "Purchase Orders & Procurement Approval",
+            "Financial Statements & Forecasting",
+            "Strategic Sourcing & Vendor Coordination",
+            "Risk Assessment & Mitigation",
         ],
     },
     {
-        title: "Backend & Integration",
-        icon: HiOutlineServerStack,
+        title: "Tools, Systems & Methodologies",
+        icon: HiOutlineDocumentText,
         skills: [
-            "RESTful APIs",
-            "Firebase Services",
-            "WebSockets / SignalR",
-            "Payment Gateway Integration",
-            "Real-Time Systems",
+            "Advanced Commercial Excel",
+            "Business Analytics with MS Excel",
+            "CRM & Contact Center Software",
+            "Workforce Management (WFM) Systems",
+            "Cloud Systems & Telephony Platforms",
+            "Six Sigma DMAIC & Quality Standards",
+            "Project Performance Management",
         ],
     },
 ];
 
-// ── Tech Icons (for the floating icons in Skills) ──
-export const techIcons: { name: string; icon: IconType; color: string }[] = [
-    { name: "Flutter", icon: SiFlutter, color: "#02569B" },
-    { name: "Dart", icon: SiDart, color: "#0175C2" },
-    { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
-    { name: "GitHub", icon: SiGithub, color: "#6e5494" },
-];
-
-// ── Projects ──
+// ── Strategic Initiatives & Operational Impact ──
 export interface Project {
     name: string;
     description: string;
     period: string;
     location: string;
+    company: string;
     highlights: string[];
-    playStoreUrl?: string;
-    appStoreUrl?: string;
     tags: string[];
     icon: string;
 }
 
 export const projects: Project[] = [
     {
-        name: "Internal Real-Time Chat System",
+        name: "Real-Time Performance Analytics & Scheduling System",
+        company: "Teleperformance Dubai",
         description:
-            "A real-time internal communication platform built for YaSchools team members, supporting secure authentication, group messaging, and push notifications.",
-        period: "02/2026 – 05/2026",
-        location: "Remote, Saudi Arabia",
+            "Orchestrating real-time shift scheduling and performance monitoring for agents using advanced Excel models and specialized software systems to secure outstanding service levels.",
+        period: "2023 – Present",
+        location: "Dubai, UAE",
         highlights: [
-            "Architected and developed a real-time internal communication platform supporting secure authentication, group messaging, and push notifications",
-            "Built with Flutter, WebSockets, and Firebase for real-time messaging, data synchronization, and push delivery",
-            "Designed scalable Clean Architecture to support multi-environment configuration and production-ready releases",
+            "Engineered dynamic shift planning and scheduling models for frontline agents, managing schedule adherence and shrinking non-productive downtime",
+            "Continuously monitored real-time queue performance and agent metrics, advising supervisors and coaching underperforming agents on skill enhancements",
+            "Secured and sustained contractual Service Level Agreements (SLAs) through proactive load balancing and direct operational coordination",
+            "Designed and delivered executive daily and weekly performance dashboards tracking KPIs across all shift rotations",
         ],
-        tags: ["Flutter", "Firebase", "WebSockets", "Riverpod", "Clean Architecture", "Flavors", "Push Notifications", "Real-Time Chat"],
-        icon: "/chat_app.jpeg",
+        tags: ["Real-Time Analytics", "Workforce Planning", "SLA Optimization", "Excel Modeling", "Performance KPIs"],
+        icon: "/teleperformance.png",
     },
     {
-        name: "YaSchools App",
+        name: "Corporate Asset Management & Portfolio Operations",
+        company: "Teleperformance Dubai",
         description:
-            "A production-grade educational platform serving thousands of active users across Saudi Arabia with authentication, payments, booking systems, and interactive UI components.",
-        period: "09/2022 – 05/2026",
-        location: "Remote, Saudi Arabia",
+            "Managing and auditing company assets, overseeing client portfolio growth, evaluating supply options, and structuring procurement approvals to maximize operational ROI.",
+        period: "2021 – 2023",
+        location: "Dubai, UAE",
         highlights: [
-            "Published on Google Play and App Store, serving thousands of active users across Saudi Arabia",
-            "Led full app UI/UX redesign and rebranding, independently translating new Figma specs into pixel-perfect Flutter components across the entire application",
-            "Delivered authentication, payments, and booking systems as independently deployable feature modules",
+            "Audited and monitored lifecycle utilization of critical corporate assets, preventing inventory slippage and improving allocation efficiency",
+            "Conducted comprehensive reviews with corporate clients to assess operational status, requirements, risk profiles, and delivery goals",
+            "Prepared accurate financial statements, business activity reports, and expenditure forecasts for executive decision-makers",
+            "Evaluated vendor supply proposals, negotiated commercial terms, and authorized purchase order issuance",
         ],
-        playStoreUrl:
-            "https://play.google.com/store/apps/details?id=com.yaschools",
-        appStoreUrl:
-            "https://apps.apple.com/eg/app/yaschools-parents/id1642532633",
-        tags: ["Bloc & Cubit", "Booking", "E-commerce", "Filters", "Rating & Reviews", "Payment Gateways", "Flavors", "Azure Pipelines", "Shorebird", "Clean Architecture"],
-        icon: "/yaschools.jpeg",
+        tags: ["Asset Management", "Financial Statements", "Client Portfolios", "Procurement", "Risk Mitigation"],
+        icon: "/teleperformance.png",
     },
     {
-        name: "Vult App",
+        name: "Contact Center Team Leadership & KPI Governance",
+        company: "City Services Dubai",
         description:
-            "A Flutter sports academy management app featuring QR attendance, player performance tracking, parent portal, and real-time chat — with full UI/UX designed from scratch.",
-        period: "12/2024 – 04/2025",
-        location: "Remote, Saudi Arabia",
+            "Direct operational leadership for a team of 15–20 customer care agents across high-volume inbound, outbound, and digital live chat channels.",
+        period: "2015 – 2017",
+        location: "Dubai, UAE",
         highlights: [
-            "Built a Flutter sports academy management app featuring QR attendance, player performance tracking, parent portal, and real-time chat",
-            "Designed and implemented the entire UI/UX from scratch with no design handoff — including per-academy theme switching and multi-academy navigation",
-            "Delivered push notification workflows (e.g. parent trip confirmation alerts) and production-ready builds for Android and iOS",
+            "Led, coached, and mentored a team of 15–20 customer service specialists in a fast-paced, multilingual multinational environment",
+            "Specialized in omnichannel contact center workflows: voice call management, outbound campaigns, and live chat queues",
+            "Enforced strict adherence to departmental policies, standard operating procedures (SOPs), and quality benchmarks",
+            "Consistently surpassed organizational KPIs for customer satisfaction, first-call resolution, and average handle time",
         ],
-        playStoreUrl:
-            "https://play.google.com/store/apps/details?id=com.amasi.vult",
-        appStoreUrl:
-            "https://apps.apple.com/eg/app/vult-%DA%A4%D9%88%D9%84%D8%AA/id6747215629",
-        tags: ["Flutter", "QR Attendance", "Player Performance", "Parent Portal", "Real-Time Chat", "Theme Switching", "Push Notifications", "Clean Architecture"],
-        icon: "/vult.jpeg",
+        tags: ["Team Leadership", "KPI Achievement", "Omnichannel Operations", "Quality Coaching", "Process Optimization"],
+        icon: "/cityservices.svg",
     },
     {
-        name: "Capital Auctions App",
+        name: "Executive Escalation & Dispute Mediation Framework",
+        company: "Teleperformance & City Services",
         description:
-            "A real-time auction platform with live bidding on auction lots, PayPal payment integration, full e-commerce flow, and instant updates powered by SignalR.",
-        period: "01/2024 – 01/2025",
-        location: "Remote, UAE",
+            "Dedicated framework to address customer grievances fairly, resolve complex disputes, and protect enterprise brand reputation through memorable customer service.",
+        period: "Multi-Year Track Record",
+        location: "Dubai, UAE",
         highlights: [
-            "Built a Flutter real-time auction platform with live bidding on auction lots and instant updates powered by SignalR",
-            "Integrated PayPal payment gateway with full e-commerce flow including shop, cart, and checkout",
-            "Implemented push notifications for auction alerts and delivered production-ready builds for Android and iOS",
+            "Managed sensitive Tier-2 and Tier-3 escalated disputes, conducting deep-dive investigations to reach fair, decisive resolutions",
+            "Maintained high customer satisfaction and brand retention by transforming frustrated clients into long-term brand advocates",
+            "Partnered with operations and quality assurance to analyze root causes of recurring complaints and implement preventative controls",
+            "Upheld respectful conflict management and professional communication under intense high-pressure circumstances",
         ],
-        playStoreUrl:
-            "https://play.google.com/store/apps/details?id=com.auctions.capital&hl=en",
-        appStoreUrl:
-            "https://apps.apple.com/us/app/capital-auctions/id6504776169",
-        tags: ["Flutter", "Live Bidding", "SignalR", "PayPal", "E-commerce", "Push Notifications", "Clean Architecture"],
-        icon: "/capital_auctions.jpeg",
+        tags: ["Conflict Mediation", "Complaint Resolution", "Brand Reputation", "Customer Retention", "Client Care"],
+        icon: "/teleperformance.png",
     },
 ];
 
-// ── Experience ──
+// ── Work Experience ──
 export interface Experience {
     company: string;
     role: string;
@@ -204,100 +199,183 @@ export interface Experience {
     location: string;
     type: string;
     bullets: string[];
-    logo?: string;
+    logo: string;
 }
 
 export const experiences: Experience[] = [
     {
-        company: "Azm Squad",
-        role: "Senior Flutter Developer",
-        period: "05/2026 – Present",
+        company: "Teleperformance",
+        role: "Real-Time & Performance Analyst",
+        period: "2023 – Present",
+        location: "Dubai, UAE",
+        type: "Full-time",
+        bullets: [
+            "Direct shift scheduling and capacity planning for agents utilizing advanced Excel models and specialized contact center software.",
+            "Monitor real-time agent status, adherence, and queue performance, identifying bottlenecks and advising on skill improvements.",
+            "Safeguard and secure contractual Service Level Agreements (SLAs) during peak volume surges and seasonal demand shifts.",
+            "Generate daily, weekly, and monthly analytical performance scorecards for operations management and client stakeholders.",
+            "Coordinate closely with operations and workforce planning to align staffing levels with evolving client expectations.",
+        ],
+        logo: "/teleperformance.png",
+    },
+    {
+        company: "Teleperformance",
+        role: "Assets Manager",
+        period: "2021 – 2023",
+        location: "Dubai, UAE",
+        type: "Full-time",
+        bullets: [
+            "Maintained comprehensive oversight of company assets, auditing inventory, and tracking lifecycle utilization.",
+            "Met with corporate clients to assess operational status, requirements, potential risks, and delivery milestones.",
+            "Prepared financial statements, business activity summaries, and revenue/expenditure forecasts.",
+            "Analyzed market dynamics to identify cost-saving and investment opportunities for client portfolios.",
+            "Evaluated vendor proposals, conducted supplier assessments, and authorized the issuance of purchase orders.",
+        ],
+        logo: "/teleperformance.png",
+    },
+    {
+        company: "Teleperformance",
+        role: "Outbound & Complaint Coordinator",
+        period: "2020 – 2021",
+        location: "Dubai, UAE",
+        type: "Full-time",
+        bullets: [
+            "Proactively contacted customers to mediate and resolve high-priority escalations with fairness, transparency, and urgency.",
+            "Addressed customer inquiries across communication channels, providing precise information and restoring customer trust.",
+            "Documented dispute trends and partnered with quality assurance teams to mitigate recurring friction points.",
+        ],
+        logo: "/teleperformance.png",
+    },
+    {
+        company: "City Services",
+        role: "Acting Team Leader",
+        period: "2015 – 2017",
+        location: "Dubai, UAE",
+        type: "Full-time",
+        bullets: [
+            "Directed and motivated a team of 15–20 customer care agents specializing in inbound calls, outbound campaigns, and live chat.",
+            "Handled complex inquiries and sensitive customer grievances with polished professional diplomacy.",
+            "Operated and troubleshot contact center software systems to minimize downtime and maintain uninterrupted queue handling.",
+            "Enforced departmental policies and procedures while driving the team to achieve and exceed all target KPIs.",
+        ],
+        logo: "/cityservices.svg",
+    },
+    {
+        company: "City Services",
+        role: "Senior Customer Service Agent",
+        period: "2013 – 2015",
+        location: "Dubai, UAE",
+        type: "Full-time",
+        bullets: [
+            "Delivered responsive, white-glove customer support across inbound telephone inquiries and multi-channel requests.",
+            "Mentored newer team members on product knowledge, call etiquette, and system navigation.",
+            "Consistently achieved top-quartile customer satisfaction (CSAT) and first-contact resolution (FCR) ratings.",
+        ],
+        logo: "/cityservices.svg",
+    },
+    {
+        company: "Vodafone Egypt",
+        role: "Customer Service Agent",
+        period: "2012 – 2013",
         location: "Cairo, Egypt",
         type: "Full-time",
         bullets: [
-            "Contributing to the development of a production Flutter application targeting Android and iOS platforms",
-            "Applying Clean Architecture principles and reusable design patterns to improve code maintainability",
-            "Developing application features using Flutter, Dart, and BLoC/Cubit state management.",
-            "Integrating APIs, payment services, and third-party packages.",
-            "Supporting CI/CD and release workflows through Azure DevOps",
-            "Collaborating within Agile teams to deliver stable and scalable mobile solutions",
+            "Provided frontline customer service for Vodafone’s high-volume telecommunications consumer base.",
+            "Handled account inquiries, billing questions, and network service troubleshooting with high precision.",
+            "Adhered to rigorous multinational contact center KPIs and customer quality assurance standards.",
         ],
-        logo: "/azmsquad_logo.jpeg",
-    },
-    {
-        company: "YaSchools Innovative Solution",
-        role: "Senior Flutter Developer",
-        period: "12/2023 – 05/2026",
-        location: "Remote, Riyadh, Saudi Arabia",
-        type: "Full-time",
-        bullets: [
-            "Built and maintained a production Flutter app serving thousands of users across Android and iOS",
-            "Refactored legacy codebase from tightly coupled, unstructured code to decoupled feature modules using Clean Architecture, SOLID principles, and design patterns — significantly improving maintainability, testability, and scalability",
-            "Migrated routing system from legacy Navigator to GoRouter, enabling deep linking, declarative route management, and improved navigation scalability",
-            "Configured Android & iOS Flavors to support multi-environment builds (dev, production), eliminating manual config switching",
-            "Designed and managed CI/CD pipelines using Azure Pipelines to automate build, testing, and release workflows for Android and iOS",
-            "Implemented over-the-air patching using Shorebird to enable code push updates, ensuring reliable production rollouts with minimal downtime",
-            "Integrated multiple payment gateways applying design patterns and DRY principles to build a reusable, extensible payment abstraction layer",
-            "Led full app UI/UX redesign and rebranding, independently translating new Figma specs into pixel-perfect Flutter components across the entire application",
-            "Collaborated cross-functionally with backend, design, QA, and product teams — managing delivery tracking via Azure Boards to ensure on-time, high-quality releases",
-        ],
-        logo: "/yaschools_co_.jpeg",
-    },
-    {
-        company: "Algoriza",
-        role: "Junior Flutter Developer",
-        period: "07/2022 – 12/2023",
-        location: "Remote, Egypt",
-        type: "Full-time",
-        bullets: [
-            "Transitioned from frontend to Flutter development, contributing to production-grade applications integrating APIs and third-party services",
-            "Collaborated with senior engineers on architectural decisions, code reviews, and quality standards",
-        ],
-        logo: "/algoriza.jpeg",
-    },
-    {
-        company: "Algoriza",
-        role: "Front-End Developer Intern",
-        period: "03/2022 – 05/2022",
-        location: "Remote, Egypt",
-        type: "Internship",
-        bullets: [
-            "Developed frontend projects using HTML, CSS, JavaScript, React, and Vue — receiving detailed code reviews and applying senior engineer feedback to improve quality and performance",
-            "Attended technical sessions on industry best practices and real-world project applications",
-        ],
-        logo: "/algoriza.jpeg",
-    },
-    {
-        company: "Devs on Duty",
-        role: "Web Design & UI/UX Internship",
-        period: "08/2019 – 09/2019",
-        location: "Remote, Egypt",
-        type: "Internship",
-        bullets: [
-            "Conducted user research, sitemaps, and user flow design using UX processes",
-            "Designed wireframes using Adobe XD and converted them into responsive web interfaces with HTML and CSS",
-        ],
-        logo: "/devs_on_duty.jpeg",
+        logo: "/vodafone.jpg",
     },
 ];
 
 // ── Education ──
 export const education = {
-    degree: "Bachelor's Degree in Computer Science",
-    institution: "Modern Academy in Maadi",
-    period: "2016 – 2020",
+    degree: "Bachelor of Commerce and Administrative Affairs",
+    institution: "Ain Shams University",
+    period: "2007 – 2011",
     location: "Cairo, Egypt",
+    details: "Core specialization in commercial accounting, administration, and organizational management.",
+    logo: "/ainshams.jpeg",
 };
+
+// ── Certifications & Professional Credentials ──
+export interface Certification {
+    name: string;
+    issuer: string;
+    status: string;
+    description: string;
+    badgeColor: string;
+}
+
+export const certifications: Certification[] = [
+    {
+        name: "Six Sigma Yellow Belt",
+        issuer: "Quality & Process Improvement",
+        status: "Certified",
+        description: "Process streamlining, defect elimination, and continuous operational improvement methodologies.",
+        badgeColor: "from-amber-500/20 to-yellow-500/20 text-amber-500 border-amber-500/30",
+    },
+    {
+        name: "PMP (Project Management Professional)",
+        issuer: "PMI Methodologies & Frameworks",
+        status: "Completed",
+        description: "Strategic project planning, resource scheduling, risk management, and governance standards.",
+        badgeColor: "from-blue-500/20 to-cyan-500/20 text-cyan-400 border-cyan-500/30",
+    },
+    {
+        name: "Business Analytics with MS Excel",
+        issuer: "Executive Data Analytics",
+        status: "Certified",
+        description: "Advanced data modeling, statistical analysis, trend forecasting, and executive dashboard reporting.",
+        badgeColor: "from-emerald-500/20 to-green-500/20 text-emerald-400 border-emerald-500/30",
+    },
+    {
+        name: "ICDL Expert & Commercial Excel",
+        issuer: "ICDL Foundation",
+        status: "Certified",
+        description: "Mastery of commercial spreadsheets, financial functions, pivot analysis, and workflow automation.",
+        badgeColor: "from-teal-500/20 to-emerald-500/20 text-teal-400 border-teal-500/30",
+    },
+    {
+        name: "GDCCS (Global Digital Customer Care)",
+        issuer: "Contact Center Standards",
+        status: "Certified",
+        description: "Omni-channel customer experience, digital contact center operations, and service excellence.",
+        badgeColor: "from-purple-500/20 to-indigo-500/20 text-purple-400 border-purple-500/30",
+    },
+    {
+        name: "Introduction to Six Sigma",
+        issuer: "Quality Management",
+        status: "Certified",
+        description: "DMAIC framework, quality assurance metrics, and root-cause analytical techniques.",
+        badgeColor: "from-rose-500/20 to-pink-500/20 text-rose-400 border-rose-500/30",
+    },
+];
 
 // ── Nav Links ──
 export const navLinks = [
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
     { label: "Skills", href: "#skills" },
-    { label: "Projects", href: "#projects" },
+    { label: "Initiatives", href: "#initiatives" },
     { label: "Experience", href: "#experience" },
+    { label: "Certifications", href: "#certifications" },
     { label: "Contact", href: "#contact" },
 ];
 
-// ── Store icon helpers ──
-export { SiGoogleplay, SiAppstore, SiGithub, SiLinkedin };
+export {
+    HiOutlineUsers,
+    HiOutlineChartBar,
+    HiOutlineBuildingOffice2,
+    HiOutlineChatBubbleLeftRight,
+    HiOutlineShieldCheck,
+    HiOutlineClock,
+    HiOutlineCheckBadge,
+    HiOutlinePhone,
+    HiOutlineEnvelope,
+    HiOutlineMapPin,
+    HiOutlineBriefcase,
+    HiOutlineAcademicCap,
+    SiLinkedin,
+    FaWhatsapp,
+};
