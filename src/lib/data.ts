@@ -235,8 +235,8 @@ export const experiences: Experience[] = [
     },
     {
         company: "Teleperformance",
-        role: "Outbound & Complaint Coordinator",
-        period: "2020 – 2021",
+        role: "Senior Inbound & Outbound & Complaint Coordinator",
+        period: "2017 – 2021",
         location: "Dubai, UAE",
         type: "Full-time",
         bullets: [
@@ -337,10 +337,10 @@ export const certifications: Certification[] = [
         badgeColor: "from-teal-500/20 to-emerald-500/20 text-teal-400 border-teal-500/30",
     },
     {
-        name: "GDCCS (Global Digital Customer Care)",
-        issuer: "Contact Center Standards",
+        name: "GDCCS (Government of Dubai Contact Centre Standards)",
+        issuer: "Government of Dubai",
         status: "Certified",
-        description: "Omni-channel customer experience, digital contact center operations, and service excellence.",
+        description: "Official Dubai Government contact center service benchmarks, customer satisfaction frameworks, and quality governance standards.",
         badgeColor: "from-purple-500/20 to-indigo-500/20 text-purple-400 border-purple-500/30",
     },
     {
